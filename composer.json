@@ -1,0 +1,23 @@
+{
+    "name": "cursomvc/cursomvc",
+    "autoload": {
+        "psr-4": {
+            "Curso_mvc\\Curso_mvc\\": "../Curso_mvc",
+            "app\\": "app/",
+            "core\\": "core/"
+        },
+        "files": [
+            "config/config.php"
+        ]
+    },
+    
+    "authors": [
+        {
+            "name": "NatoRodrigues",
+            "email": "renwise2.0@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "<=8.2.6"
+    }
+}
