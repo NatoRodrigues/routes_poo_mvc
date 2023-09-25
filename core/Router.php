@@ -5,17 +5,12 @@ namespace core;
 class Router // <- classe para desenvolver sistema de rotas.
 {
     private string $controller = 'Site'; // <- vai armazenar o nome da classe principal.
-    private string $method = 'home'; // <- Vai armazenar o nome da página a ser acessada.
+    private string $method = ''; // <- Vai armazenar o nome da página a ser acessada.
     private array $param = []; // <- vai armazenar um parametro se necessário
 
     public function __construct()
     {
         $router = $this->url();
-    
-        // Adicione instrução para imprimir o valor de $router aqui
-        echo '<pre>';
-        print_r($router);
-        echo '</pre>';
     
         if (file_exists('app/controllers/' . ucfirst($router[0] . '.php'))) {
             $this->controller = $router[0];
