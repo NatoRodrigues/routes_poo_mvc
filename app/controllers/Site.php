@@ -2,17 +2,24 @@
 
 namespace app\controllers;
 
-class Site
+use app\models\Crud;
+
+class Site extends Crud
 {
     public function Home() // Certifique-se de que comece com letra maiúscula
     {
         require_once __DIR__ .'/../views/home.php';
     }
-
-    public function Galery($foto) // Certifique-se de que comece com letra maiúscula
-    {
-        $photo = $foto;
-        require_once __DIR__ .'/../views/galery.php';
-    }
     
+    public function cadastro()
+    {
+        $cadastro = $this->create();
+        require_once __DIR__ .'/../views/cadastro.php';
+    }
+
+    public function consulta()
+    {
+        $consulta = $this->read();
+        require_once __DIR__ . '/../views/consulta.php';
+    }
 }

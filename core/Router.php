@@ -2,6 +2,7 @@
 
 namespace core;
 
+
 class Router // <- classe para desenvolver sistema de rotas.
 {
     private string $controller = 'Site'; // <- vai armazenar o nome da classe principal.
@@ -41,8 +42,15 @@ class Router // <- classe para desenvolver sistema de rotas.
 
     private function url()
     {
-        $parse_url = explode("/", filter_input(INPUT_GET, 'router', FILTER_SANITIZE_URL));
-        return $parse_url;
+
+    $routerParam = filter_input(INPUT_GET, 'router', FILTER_SANITIZE_URL);
+
+        if ($routerParam !== null) {
+            $parse_url = explode("/", $routerParam);
+            return $parse_url;
+        } else {
+            return [];
+        }
     }
 }
 

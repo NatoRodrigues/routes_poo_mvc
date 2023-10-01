@@ -11,6 +11,10 @@ class ComposerStaticInitc49d366b1a0258df160c7aecabd8af2d
     );
 
     public static $prefixLengthsPsr4 = array (
+        'r' => 
+        array (
+            'routes_poo_mvc\\routes_poo_mvc\\' => 30,
+        ),
         'c' => 
         array (
             'core\\' => 5,
@@ -19,13 +23,13 @@ class ComposerStaticInitc49d366b1a0258df160c7aecabd8af2d
         array (
             'app\\' => 4,
         ),
-        'C' => 
-        array (
-            'Curso_mvc\\Curso_mvc\\' => 20,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'routes_poo_mvc\\routes_poo_mvc\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/',
+        ),
         'core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
@@ -34,17 +38,10 @@ class ComposerStaticInitc49d366b1a0258df160c7aecabd8af2d
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
-        'Curso_mvc\\Curso_mvc\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/',
-        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'app\\controllers\\Site' => __DIR__ . '/../..' . '/app/controllers/Site.php',
-        'app\\controllers\\controller' => __DIR__ . '/../..' . '/app/controllers/controller.php',
-        'core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

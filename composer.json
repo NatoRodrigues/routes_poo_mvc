@@ -2,7 +2,7 @@
     "name": "cursomvc/cursomvc",
     "autoload": {
         "psr-4": {
-            "Curso_mvc\\Curso_mvc\\": "../Curso_mvc",
+            "routes_poo_mvc\\routes_poo_mvc\\": "../routes_poo_mvc",
             "app\\": "app/",
             "core\\": "core/"
         },
