@@ -10,6 +10,8 @@ error_reporting(E_ALL);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="resources/icons8-crud-32.png" type="image/x-icon">
+<link rel="shortcut icon" href="resources/icons8-crud-32.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="config/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,19 +20,20 @@ error_reporting(E_ALL);
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>PHP MVC POO</title>
 
-    <!-- Adicione um estilo CSS para tornar o texto preto -->
     <style>
         .black-text {
             color: black !important;
         }
+
+        
     </style>
 </head>
 <body>
-<nav class="black nav-extended">
+<nav class=" pink lighten-1 nav-extended">
   <div class="nav-wrapper">
-    <div class="container"> <!-- Adicione uma div container para centralizar o logotipo -->
+    <div class="container">
       <a href="?router=Site/home/" class="brand-logo center">Curso MVC</a>
-      <!-- Adicione o botão de hambúrguer apenas em telas pequenas -->
+      
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="?router=Site/cadastro/">Cadastro</a></li>        
